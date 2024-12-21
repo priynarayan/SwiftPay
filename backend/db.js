@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const { string } = require("zod");
 require('dotenv').config();
 
-const url = process.env.MONGODB_URL || "mongodb+srv://nitin:%40nitinfist@cluster0.ghyyxqa.mongodb.net/paytm?retryWrites=true&w=majority&appName=Cluster0";
+const url = process.env.MONGODB_URL;
 
 mongoose.connect(url);
 

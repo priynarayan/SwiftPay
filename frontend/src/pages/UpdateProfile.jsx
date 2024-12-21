@@ -45,7 +45,7 @@ export const UpdateProfile = () => {
         }} placeholder="123456" label={"Password"} />
         <div className="pt-4">
           <Button onClick={async () => {
-            const response = await axios.put("http://localhost:3000/api/v1/user/edit", {
+            const response = await axios.put("https://swift-pay-ecru.vercel.app/api/v1/user/edit", {
               username,
               firstName,
               lastName,
